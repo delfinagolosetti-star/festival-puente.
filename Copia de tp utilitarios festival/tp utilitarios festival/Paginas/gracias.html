@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracias | Festival Puente 2025</title>
+  <link rel="icon" type="image/png" href="../Imagenes/logopuente.png">
+  <style>
+    body { margin:0; font-family:"Franklin Gothic Medium Cond","Arial Narrow",Arial,sans-serif; background-color:#000; color:#fff; }
+    .top-bar { background:#c94090; text-align:center; padding:8px 0; font-size:15px; position:fixed; width:100%; top:0; z-index:100; }
+    header { background:#272b61; padding:10px; text-align:center; margin-top:35px; position:relative; }
+    header img { width:100px; }
+    .menu-btn { position:absolute; left:20px; top:50%; transform:translateY(-50%); font-size:30px; cursor:pointer; color:#fff; z-index:200; }
+    .side-menu { height:calc(100% - 35px); width:0; position:fixed; top:35px; left:0; background:#272b61; overflow-x:hidden; transition:.4s; padding-top:80px; z-index:150; }
+    .side-menu a { display:block; color:#fff; text-decoration:none; padding:15px 25px; font-size:20px; border-bottom:1px solid #c94090; }
+    .side-menu a:hover { background:#c94090; }
+    main { min-height:90vh; text-align:center; padding:40px 20px; background-color:#0b0b1a; }
+    h1 { margin:0 0 10px 0; }
+    .panel { max-width:800px; margin:0 auto; text-align:center; border:1px solid #3a3a6c; padding:20px; background:#0b0b1a; }
+    .boton { background:#c94090; color:#fff; border:0; padding:10px 14px; cursor:pointer; text-decoration:none; display:inline-block; }
+    .boton:hover { background:#fff; color:#c94090; }
+    footer { background:#272b61; text-align:center; padding:10px; font-size:14px; }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar"><strong>Fecha 2025 -- Santa Fe capital -- Costanera este de la ciudad</strong></div>
+
+  <header>
+    <div class="menu-btn" onclick="abrirMenu()">☰</div>
+    <img src="../Imagenes/logopuente.png" alt="Festival Puente">
+  </header>
+
+  <nav id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" style="text-align:right; padding-right:25px;" onclick="cerrarMenu()">✕</a>
+    <a href="index.html">Inicio</a>
+    <a href="entradas.html">Entradas</a>
+    <a href="experiencia.html">Experiencia</a>
+    <a href="grilla.html">Grilla</a>
+    <a href="artistas.html">Artistas</a>
+    <a href="info.html">Info Turística</a>
+    <a href="soporte.html">Apoyo y Soporte</a>
+    <a href="registro.html">Registro</a>
+    <a href="sponsors.html">Sponsors</a>
+  </nav>
+
+  <main>
+    <h1>¡Gracias por tu compra!</h1>
+    <div class="panel">
+      <p>Tu solicitud fue recibida correctamente.</p>
+      <p>En instantes vas a recibir un correo con el detalle de tu compra y las instrucciones de ingreso.</p>
+      <p>Recordá presentarte con tu <strong>DNI</strong> y el <strong>código de entrada</strong> el día del evento.</p>
+      <div style="margin-top:16px;">
+        <a href="index.html" class="boton">Volver al inicio</a>
+        <a href="info.html" class="boton" style="margin-left:8px;">Ver Info Turística</a>
+      </div>
+    </div>
+  </main>
+
+  <footer><strong>© 2025 Festival Puente</strong></footer>
+
+  <script>
+    function abrirMenu(){ document.getElementById("sideMenu").style.width="250px"; }
+    function cerrarMenu(){ document.getElementById("sideMenu").style.width="0"; }
+  </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Turística | Festival Puente 2025</title>
+  <link rel="icon" type="image/png" href="../Imagenes/logopuente.png">
+  <style>
+    body { margin:0; font-family:"Franklin Gothic Medium Cond","Arial Narrow",Arial,sans-serif; background-color:#000; color:#fff; }
+    .top-bar { background:#c94090; text-align:center; padding:8px 0; font-size:15px; position:fixed; width:100%; top:0; z-index:100; }
+    header { background:#272b61; padding:10px; text-align:center; margin-top:35px; position:relative; }
+    header img { width:100px; }
+    .menu-btn { position:absolute; left:20px; top:50%; transform:translateY(-50%); font-size:30px; cursor:pointer; color:#fff; z-index:200; }
+    .side-menu { height:calc(100% - 35px); width:0; position:fixed; top:35px; left:0; background:#272b61; overflow-x:hidden; transition:.4s; padding-top:80px; z-index:150; }
+    .side-menu a { display:block; color:#fff; text-decoration:none; padding:15px 25px; font-size:20px; border-bottom:1px solid #c94090; }
+    .side-menu a:hover { background:#c94090; }
+    main { min-height:90vh; text-align:center; padding:40px 20px; background-color:#0b0b1a; }
+    h1 { margin:0 0 10px 0; }
+    .panel { max-width:1000px; margin:0 auto; text-align:left; border:1px solid #3a3a6c; padding:15px; background:#0b0b1a; }
+    table { width:100%; border-collapse:collapse; background:#0b0b1a; margin-top:10px; }
+    th, td { padding:10px; border:1px solid #3a3a6c; }
+    th { background:#1d1f46; text-align:left; }
+    .nota { margin-top:10px; font-size:14px; color:#cfcfed; }
+    footer { background:#272b61; text-align:center; padding:10px; font-size:14px; }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar"><strong>Fecha 2025 -- Santa Fe capital -- Costanera este de la ciudad</strong></div>
+
+  <header>
+    <div class="menu-btn" onclick="abrirMenu()">☰</div>
+    <img src="../Imagenes/logopuente.png" alt="Festival Puente">
+  </header>
+
+  <nav id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" style="text-align:right; padding-right:25px;" onclick="cerrarMenu()">✕</a>
+    <a href="index.html">Inicio</a>
+    <a href="entradas.html">Entradas</a>
+    <a href="experiencia.html">Experiencia</a>
+    <a href="grilla.html">Grilla</a>
+    <a href="artistas.html">Artistas</a>
+    <a href="info.html">Info Turística</a>
+    <a href="soporte.html">Apoyo y Soporte</a>
+    <a href="registro.html">Registro</a>
+    <a href="sponsors.html">Sponsors</a>
+  </nav>
+
+  <main>
+    <h1>Info Turística</h1>
+
+    <div class="panel">
+      <h2 style="margin:0 0 10px 0;">Cómo llegar</h2>
+      <table>
+        <tr>
+          <th>Recurso</th>
+          <th>Detalle</th>
+        </tr>
+        <tr>
+          <td>Ubicación</td>
+          <td>Costanera Este – Santa Fe Capital</td>
+        </tr>
+        <tr>
+          <td>Accesos peatonales</td>
+          <td>Puertas A (norte) y B (sur). Seguir señalética del personal.</td>
+        </tr>
+        <tr>
+          <td>Bicis</td>
+          <td>Biciestacionamiento gratuito junto a puerta B. Llevar candado.</td>
+        </tr>
+        <tr>
+          <td>Remises / Taxis</td>
+          <td>Descenso y ascenso en área señalizada fuera del anillo del predio.</td>
+        </tr>
+      </table>
+      <p class="nota">Tip: llegá con tiempo para los controles de seguridad y validación de entradas.</p>
+    </div>
+
+    <div class="panel" style="margin-top:16px;">
+      <h2 style="margin:0 0 10px 0;">Transporte público</h2>
+      <table>
+        <tr>
+          <th>Línea</th>
+          <th>Parada cercana</th>
+          <th>Frecuencia estimada</th>
+        </tr>
+        <tr>
+          <td>Línea 2</td>
+          <td>Ciudad Universitaria</td>
+          <td>10–15 min</td>
+        </tr>
+        <tr>
+          <td>Línea 13</td>
+          <td>Ciudad Universitaria</td>
+          <td>12–20 min</td>
+        </tr>
+        <tr>
+          <td>Línea 16</td>
+          <td>Avenida de los 7 Jefes</td>
+          <td>15–20 min</td>
+        </tr>
+      </table>
+      <p class="nota">Verificá horarios actualizados el mismo día del evento.</p>
+    </div>
+
+    <div class="panel" style="margin-top:16px;">
+      <h2 style="margin:0 0 10px 0;">Estacionamiento y accesos</h2>
+      <table>
+        <tr>
+          <th>Sector</th>
+          <th>Detalle</th>
+          <th>Horario</th>
+        </tr>
+        <tr>
+          <td>Estacionamiento general</td>
+          <td>Capacidad limitada. Pago en el lugar.</td>
+          <td>15:00–01:00</td>
+        </tr>
+        <tr>
+          <td>Estacionamiento accesible</td>
+          <td>Con credencial. Ingreso por Puerta A.</td>
+          <td>15:00–01:00</td>
+        </tr>
+        <tr>
+          <td>Drop-off</td>
+          <td>Zona de descenso señalizada (remises/taxis).</td>
+          <td>Durante el evento</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="panel" style="margin-top:16px;">
+      <h2 style="margin:0 0 10px 0;">Horarios del evento</h2>
+      <table>
+        <tr>
+          <th>Instancia</th>
+          <th>Horario</th>
+        </tr>
+        <tr>
+          <td>Puertas abren</td>
+          <td>15:00</td>
+        </tr>
+        <tr>
+          <td>Shows</td>
+          <td>16:00–00:00</td>
+        </tr>
+        <tr>
+          <td>Cierre de predio</td>
+          <td>00:30</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="panel" style="margin-top:16px;">
+      <h2 style="margin:0 0 10px 0;">Qué llevar / Qué no llevar</h2>
+      <table>
+        <tr>
+          <th>Podés llevar</th>
+          <th>No se permite</th>
+        </tr>
+        <tr>
+          <td>Documento (DNI), entrada (digital o impresa)</td>
+          <td>Vidrio, aerosoles, objetos punzantes</td>
+        </tr>
+        <tr>
+          <td>Botella reutilizable vacía (hay hidratación gratuita)</td>
+          <td>Bebidas alcohólicas y sustancias ilegales</td>
+        </tr>
+        <tr>
+          <td>Protector solar, gorra, abrigo liviano</td>
+          <td>Paraguas con punta metálica</td>
+        </tr>
+        <tr>
+          <td>Cargador portátil, celular</td>
+          <td>Selfie sticks extensibles de metal</td>
+        </tr>
+        <tr>
+          <td>Medicación personal (con receta si aplica)</td>
+          <td>Carpas, pirotecnia</td>
+        </tr>
+      </table>
+      <p class="nota">Los controles se realizan al ingreso. Cuidemos entre todos la seguridad y la experiencia.</p>
+    </div>
+  </main>
+
+  <footer><strong>© 2025 Festival Puente</strong></footer>
+
+  <script>
+    function abrirMenu(){ document.getElementById("sideMenu").style.width="250px"; }
+    function cerrarMenu(){ document.getElementById("sideMenu").style.width="0"; }
+  </script>
+</body>
+</html>

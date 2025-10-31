@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra | Festival Puente 2025</title>
+  <link rel="icon" type="image/png" href="../Imagenes/logopuente.png">
+  <style>
+    body { margin: 0; font-family: "Franklin Gothic Medium Cond","Arial Narrow",Arial,sans-serif; background-color:#000; color:#fff; }
+    .top-bar { background:#c94090; text-align:center; padding:8px 0; font-size:15px; position:fixed; width:100%; top:0; z-index:100; }
+    header { background:#272b61; padding:10px; text-align:center; margin-top:35px; position:relative; }
+    header img { width:100px; }
+    .menu-btn { position:absolute; left:20px; top:50%; transform:translateY(-50%); font-size:30px; cursor:pointer; color:#fff; z-index:200; }
+    .side-menu { height:calc(100% - 35px); width:0; position:fixed; top:35px; left:0; background:#272b61; overflow-x:hidden; transition:.4s; padding-top:80px; z-index:150; }
+    .side-menu a { display:block; color:#fff; text-decoration:none; padding:15px 25px; font-size:20px; border-bottom:1px solid #c94090; }
+    .side-menu a:hover { background:#c94090; }
+    main { min-height:90vh; text-align:center; padding:40px 20px; background-color:#0b0b1a; }
+    h1 { margin:0 0 10px 0; }
+    .wrap { max-width:1100px; margin:0 auto; text-align:left; }
+    .col { vertical-align:top; }
+    .panel { border:1px solid #3a3a6c; background:#0b0b1a; padding:15px; }
+    table { width:100%; border-collapse:collapse; background:#0b0b1a; }
+    th, td { padding:10px; border:1px solid #3a3a6c; }
+    th { background:#1d1f46; text-align:left; }
+    input, select {
+  width:100%;
+  padding:8px;
+  box-sizing:border-box;
+}
+
+    .boton { background:#c94090; color:#fff; border:0; padding:12px 16px; cursor:pointer; display:inline-block; }
+    .boton:hover { background:#fff; color:#c94090; }
+    .nota { font-size:14px; color:#cfcfed; margin-top:8px; }
+    footer { background:#272b61; text-align:center; padding:10px; font-size:14px; }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar"><strong>Fecha 2025 -- Santa Fe capital -- Costanera este de la ciudad</strong></div>
+
+  <header>
+    <div class="menu-btn" onclick="abrirMenu()">☰</div>
+    <img src="../Imagenes/logopuente.png" alt="Festival Puente">
+  </header>
+
+  <nav id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" style="text-align:right; padding-right:25px;" onclick="cerrarMenu()">✕</a>
+    <a href="index.html">Inicio</a>
+    <a href="entradas.html">Entradas</a>
+    <a href="experiencia.html">Experiencia</a>
+    <a href="grilla.html">Grilla</a>
+    <a href="artistas.html">Artistas</a>
+    <a href="info.html">Info Turística</a>
+    <a href="soporte.html">Apoyo y Soporte</a>
+    <a href="registro.html">Registro</a>
+    <a href="sponsors.html">Sponsors</a>
+  </nav>
+
+  <main>
+    <h1>Compra</h1>
+
+    <table class="wrap" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td class="col" width="65%">
+          <div class="panel">
+            <h2 style="margin:0 0 10px 0;">Resumen de compra</h2>
+            <form action="gracias.html" method="get">
+              <table>
+                <tr>
+                  <th>Tipo de entrada</th>
+                  <th>Cantidad</th>
+                  <th>Precio unitario</th>
+                </tr>
+                <tr>
+                  <td>
+                    <select id="producto" name="producto">
+                      <option value="General Día 1">General Día 1</option>
+                      <option value="General Día 2">General Día 2</option>
+                      <option value="Pase 2 Días">Pase 2 Días</option>
+                      <option value="VIP">VIP</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select id="cantidad" name="cantidad">
+                      <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                      <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input id="precio" name="precio" type="text" value="$40.000" readonly>
+                  </td>
+                </tr>
+              </table>
+
+              <p class="nota">El total se confirma al finalizar. Los valores incluyen impuestos.</p>
+
+              <h2 style="margin:20px 0 10px 0;">Datos de pago</h2>
+              <table>
+                <tr>
+                  <td>Nombre en la tarjeta</td>
+                  <td><input type="text" name="titular" required></td>
+                </tr>
+                <tr>
+                  <td>Número de tarjeta</td>
+                  <td><input type="text" name="tarjeta" placeholder="0000 0000 0000 0000" required></td>
+                </tr>
+                <tr>
+                  <td>Vencimiento</td>
+                  <td><input type="month" name="vencimiento" required></td>
+                </tr>
+                <tr>
+                  <td>Documento del titular</td>
+                  <td><input type="text" name="dni" placeholder="DNI/Pasaporte" required></td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                  <td>Teléfono</td>
+                  <td><input type="tel" name="telefono" placeholder="+54 9 ..." required></td>
+                </tr>
+                <tr>
+                  <td>Dirección</td>
+                  <td><input type="text" name="direccion" required></td>
+                </tr>
+                <tr>
+                  <td>Provincia</td>
+                  <td><input type="text" name="provincia" required></td>
+                </tr>
+                <tr>
+                  <td>Código postal</td>
+                  <td><input type="text" name="cp" required></td>
+                </tr>
+                <tr>
+                  <td>Método de pago</td>
+                  <td>
+                    <select name="metodo" required>
+                      <option value="">Elegir…</option>
+                      <option>Crédito</option>
+                      <option>Débito</option>
+                      <option>QR</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><label><input type="checkbox" name="terminos" required> Acepto términos y condiciones</label></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><button type="submit" class="boton">Finalizar compra</button></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </td>
+
+        <td class="col" width="35%">
+          <div class="panel">
+            <h2 style="margin:0 0 10px 0;">Iniciar sesión</h2>
+            <form action="#" method="get">
+              <table>
+                <tr>
+                  <td>Email</td>
+                  <td><input type="email" name="login_email" required></td>
+                </tr>
+                <tr>
+                  <td>Contraseña</td>
+                  <td><input type="password" name="login_pass" required></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><button type="submit" class="boton">Ingresar</button></td>
+                </tr>
+              </table>
+            </form>
+
+            <h3 style="margin:20px 0 10px 0;">¿No tenés cuenta?</h3>
+            <a href="registro.html" class="boton">Registrarse</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <footer><strong>© 2025 Festival Puente</strong></footer>
+
+  <script>
+    function abrirMenu(){ document.getElementById("sideMenu").style.width="250px"; }
+    function cerrarMenu(){ document.getElementById("sideMenu").style.width="0"; }
+
+    var precios = {
+      "General Día 1": "$40.000",
+      "General Día 2": "$40.000",
+      "Pase 2 Días": "$70.000",
+      "VIP": "$100.000"
+    };
+    function actualizarPrecio(){
+      var prod = document.getElementById("producto").value;
+      document.getElementById("precio").value = precios[prod] || "";
+    }
+    document.getElementById("producto").addEventListener("change", actualizarPrecio);
+    actualizarPrecio();
+  </script>
+</body>
+</html>
