@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apoyo y Soporte | Festival Puente 2025</title>
+  <link rel="icon" type="image/png" href="../Imagenes/logopuente.png">
+  <style>
+    body { margin:0; font-family:"Franklin Gothic Medium Cond","Arial Narrow",Arial,sans-serif; background-color:#000; color:#fff; }
+    .top-bar { background:#c94090; text-align:center; padding:8px 0; font-size:15px; position:fixed; width:100%; top:0; z-index:100; }
+    header { background:#272b61; padding:10px; text-align:center; margin-top:35px; position:relative; }
+    header img { width:100px; }
+    .menu-btn { position:absolute; left:20px; top:50%; transform:translateY(-50%); font-size:30px; cursor:pointer; color:#fff; z-index:200; }
+    .side-menu { height:calc(100% - 35px); width:0; position:fixed; top:35px; left:0; background:#272b61; overflow-x:hidden; transition:.4s; padding-top:80px; z-index:150; }
+    .side-menu a { display:block; color:#fff; text-decoration:none; padding:15px 25px; font-size:20px; border-bottom:1px solid #c94090; }
+    .side-menu a:hover { background:#c94090; }
+    main { min-height:90vh; text-align:center; padding:40px 20px; background-color:#0b0b1a; }
+    h1 { margin:0 0 10px 0; }
+    .panel { max-width:1000px; margin:0 auto; text-align:left; border:1px solid #3a3a6c; padding:15px; background:#0b0b1a; }
+    table { width:100%; border-collapse:collapse; background:#0b0b1a; margin-top:10px; }
+    th, td { padding:10px; border:1px solid #3a3a6c; vertical-align:top; }
+    th { background:#1d1f46; text-align:left; }
+    .nota { margin-top:10px; font-size:14px; color:#cfcfed; }
+    input, select, textarea { width:100%; padding:8px; box-sizing:border-box; }
+    textarea { min-height:120px; }
+    .boton { background:#c94090; color:#fff; border:0; padding:10px 14px; cursor:pointer; }
+    .boton:hover { background:#fff; color:#c94090; }
+    footer { background:#272b61; text-align:center; padding:10px; font-size:14px; }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar"><strong>Fecha 2025 -- Santa Fe capital -- Costanera este de la ciudad</strong></div>
+
+  <header>
+    <div class="menu-btn" onclick="abrirMenu()">☰</div>
+    <img src="../Imagenes/logopuente.png" alt="Festival Puente">
+  </header>
+
+  <nav id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" style="text-align:right; padding-right:25px;" onclick="cerrarMenu()">✕</a>
+    <a href="index.html">Inicio</a>
+    <a href="entradas.html">Entradas</a>
+    <a href="experiencia.html">Experiencia</a>
+    <a href="grilla.html">Grilla</a>
+    <a href="artistas.html">Artistas</a>
+    <a href="info.html">Info Turística</a>
+    <a href="soporte.html">Apoyo y Soporte</a>
+    <a href="registro.html">Registro</a>
+    <a href="sponsors.html">Sponsors</a>
+  </nav>
+
+  <main>
+    <h1>Apoyo y Soporte</h1>
+
+    <div class="panel">
+      <h2 style="margin:0 0 10px 0;">Preguntas frecuentes</h2>
+      <table>
+        <tr>
+          <th>Pregunta</th>
+          <th>Respuesta</th>
+        </tr>
+        <tr>
+          <td>¿Puedo ingresar con alimentos?</td>
+          <td>Se permite snack cerrado y botella reutilizable vacía. No se permite vidrio ni bebidas alcohólicas.</td>
+        </tr>
+        <tr>
+          <td>¿Los menores pueden ingresar?</td>
+          <td>Sí, con adulto responsable y documentación. Recomendamos protección auditiva.</td>
+        </tr>
+        <tr>
+          <td>¿Hay puntos de hidratación?</td>
+          <td>Sí, gratuitos a lo largo del predio. Podés llevar tu botella vacía.</td>
+        </tr>
+        <tr>
+          <td>¿Qué hago si pierdo algo?</td>
+          <td>Acercate al punto de informes durante el evento o escribí a <a href="mailto:perdidos@puente.com" style="color:#c94090;">perdidos@puente.com</a>.</td>
+        </tr>
+        <tr>
+          <td>¿Dónde veo la grilla?</td>
+          <td>En la sección <a href="grilla.html" style="color:#c94090;">Grilla</a>. Cualquier cambio se informa por altoparlantes y redes.</td>
+        </tr>
+      </table>
+      <p class="nota">Si tu consulta no está listada, escribinos por el formulario o a soporte@puente.com.</p>
+    </div>
+
+    <div class="panel" style="margin-top:16px;">
+      <h2 style="margin:0 0 10px 0;">Contactos</h2>
+      <table>
+        <tr>
+          <th>Área</th>
+          <th>Contacto</th>
+          <th>Horario</th>
+        </tr>
+        <tr>
+          <td>Soporte general</td>
+          <td><a href="mailto:soporte@puente.com" style="color:#c94090;">soporte@puente.com</a> — (342) 555-0000</td>
+          <td>Lun a Vie, 10:00–18:00</td>
+        </tr>
+        <tr>
+          <td>Accesibilidad</td>
+          <td><a href="mailto:accesibilidad@puente.com" style="color:#c94090;">accesibilidad@puente.com</a></td>
+          <td>Lun a Vie, 10:00–18:00</td>
+        </tr>
+        <tr>
+          <td>Prensa</td>
+          <td><a href="mailto:prensa@puente.com" style="color:#c94090;">prensa@puente.com</a></td>
+          <td>Lun a Vie, 10:00–18:00</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="panel" style="margin-top:16px;">
+      <h2 style="margin:0 0 10px 0;">Enviar consulta</h2>
+      <form action="#" method="get">
+        <table>
+          <tr>
+            <td>Nombre</td>
+            <td><input type="text" name="nombre" required></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td>Asunto</td>
+            <td><input type="text" name="asunto" required></td>
+          </tr>
+          <tr>
+            <td>Mensaje</td>
+            <td><textarea name="mensaje" required></textarea></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit" class="boton">Enviar</button></td>
+          </tr>
+        </table>
+      </form>
+      <p class="nota">También podés escribirnos a <a href="mailto:soporte@puente.com" style="color:#c94090;">soporte@puente.com</a>.</p>
+    </div>
+  </main>
+
+  <footer><strong>© 2025 Festival Puente</strong></footer>
+
+  <script>
+    function abrirMenu(){ document.getElementById("sideMenu").style.width="250px"; }
+    function cerrarMenu(){ document.getElementById("sideMenu").style.width="0"; }
+  </script>
+</body>
+</html>

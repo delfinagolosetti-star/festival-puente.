@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiencia | Festival Puente 2025</title>
+  <link rel="icon" type="image/png" href="../Imagenes/logopuente.png">
+  <style>
+    body { margin:0; font-family:"Franklin Gothic Medium Cond","Arial Narrow",Arial,sans-serif; background-color:#000; color:#fff; }
+    .top-bar { background:#c94090; text-align:center; padding:8px 0; font-size:15px; position:fixed; width:100%; top:0; z-index:100; }
+    header { background:#272b61; padding:10px; text-align:center; margin-top:35px; position:relative; }
+    header img { width:100px; }
+    .menu-btn { position:absolute; left:20px; top:50%; transform:translateY(-50%); font-size:30px; cursor:pointer; color:#fff; z-index:200; }
+    .side-menu { height:calc(100% - 35px); width:0; position:fixed; top:35px; left:0; background:#272b61; overflow-x:hidden; transition:.4s; padding-top:80px; z-index:150; }
+    .side-menu a { display:block; color:#fff; text-decoration:none; padding:15px 25px; font-size:20px; border-bottom:1px solid #c94090; }
+    .side-menu a:hover { background:#c94090; }
+    main { min-height:90vh; text-align:center; padding:40px 20px; background-color:#0b0b1a; }
+    h1 { margin:0 0 10px 0; }
+    .panel { max-width:1000px; margin:0 auto; text-align:left; border:1px solid #3a3a6c; padding:15px; background:#0b0b1a; }
+    table { width:100%; border-collapse:collapse; background:#0b0b1a; margin-top:10px; }
+    th, td { padding:10px; border:1px solid #3a3a6c; }
+    th { background:#1d1f46; text-align:left; }
+    .nota { margin-top:10px; font-size:14px; color:#cfcfed; }
+    footer { background:#272b61; text-align:center; padding:10px; font-size:14px; }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar"><strong>Fecha 2025 -- Santa Fe capital -- Costanera este de la ciudad</strong></div>
+
+  <header>
+    <div class="menu-btn" onclick="abrirMenu()">☰</div>
+    <img src="../Imagenes/logopuente.png" alt="Festival Puente">
+  </header>
+
+  <nav id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" style="text-align:right; padding-right:25px;" onclick="cerrarMenu()">✕</a>
+    <a href="index.html">Inicio</a>
+    <a href="entradas.html">Entradas</a>
+    <a href="experiencia.html">Experiencia</a>
+    <a href="grilla.html">Grilla</a>
+    <a href="artistas.html">Artistas</a>
+    <a href="info.html">Info Turística</a>
+    <a href="soporte.html">Apoyo y Soporte</a>
+    <a href="registro.html">Registro</a>
+    <a href="sponsors.html">Sponsors</a>
+  </nav>
+
+  <main>
+    <h1>Experiencia</h1>
+
+    <div class="panel">
+      <h2 style="margin:0 0 10px 0;">Zonas y servicios</h2>
+      <table>
+        <tr>
+          <th>Zona</th>
+          <th>Descripción</th>
+          <th>Horarios</th>
+        </tr>
+        <tr>
+          <td>Escenario Principal</td>
+          <td>Headliners y shows especiales</td>
+          <td>16:00–00:00</td>
+        </tr>
+        <tr>
+          <td>Escenario Urbano</td>
+          <td>Trap, hip hop y artistas emergentes</td>
+          <td>15:00–23:00</td>
+        </tr>
+        <tr>
+          <td>DJ Tent</td>
+          <td>Sets continuos para bailar</td>
+          <td>16:00–01:00</td>
+        </tr>
+        <tr>
+          <td>Áreas de descanso</td>
+          <td>Sectores con sombra y bancos</td>
+          <td>Durante todo el evento</td>
+        </tr>
+        <tr>
+          <td>Lockers</td>
+          <td>Guardá tus pertenencias de forma segura</td>
+          <td>15:00–00:30</td>
+        </tr>
+        <tr>
+          <td>Hidratación</td>
+          <td>Puntos de agua gratis (botella reutilizable sugerida)</td>
+          <td>Durante todo el evento</td>
+        </tr>
+        <tr>
+          <td>Gastronomía</td>
+          <td>Opciones veggie, sin TACC y cafetería</td>
+          <td>15:00–00:00</td>
+        </tr>
+      </table>
+      <p class="nota">Recomendamos llegar con tiempo y revisar las indicaciones de acceso en “Info Turística”.</p>
+    </div>
+
+    <div class="panel" style="margin-top:16px;">
+      <h2 style="margin:0 0 10px 0;">Accesibilidad</h2>
+      <table>
+        <tr>
+          <th>Recurso</th>
+          <th>Detalle</th>
+        </tr>
+        <tr>
+          <td>Plataforma accesible</td>
+          <td>Sector reservado frente al Escenario Principal</td>
+        </tr>
+        <tr>
+          <td>Acompañante</td>
+          <td>Ingreso sin cargo con certificado correspondiente</td>
+        </tr>
+        <tr>
+          <td>Baños accesibles</td>
+          <td>Ubicados junto a primeros auxilios</td>
+        </tr>
+        <tr>
+          <td>Contacto</td>
+          <td>accesibilidad@puente.com</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="panel" style="margin-top:16px;">
+      <h2 style="margin:0 0 10px 0;">Seguridad y objetos perdidos</h2>
+      <table>
+        <tr>
+          <th>Tópico</th>
+          <th>Información</th>
+        </tr>
+        <tr>
+          <td>Primeros auxilios</td>
+          <td>Posta sanitaria central + móviles en predio</td>
+        </tr>
+        <tr>
+          <td>Prohibido ingresar</td>
+          <td>Vidrio, aerosoles, objetos punzantes, bebidas alcohólicas</td>
+        </tr>
+        <tr>
+          <td>Objetos perdidos</td>
+          <td>Retiro al finalizar el show en el punto de informes o por email a perdidos@puente.com</td>
+        </tr>
+        <tr>
+          <td>Menores</td>
+          <td>Ingresan con adulto responsable y documentación</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <footer><strong>© 2025 Festival Puente</strong></footer>
+
+  <script>
+    function abrirMenu(){ document.getElementById("sideMenu").style.width="250px"; }
+    function cerrarMenu(){ document.getElementById("sideMenu").style.width="0"; }
+  </script>
+</body>
+</html>
